@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const string defaultMapName = "defaultMap.txt";
+const string defaultMapName = "MapDefault.txt";
 
 int main(int argc, char *argv[]) {
 	if (argc == 2) {

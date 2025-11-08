@@ -301,7 +301,7 @@ bool Floor::determineSpawnBS(vector<pair<int, int>> freeGoldNeighbours,
 		Cell *currNeighCell = &(floorMap[row][col]);
 
 		// Obtain the free neighbours of the current gold neighbouring Cell.
-		cerr << "These calls to get cell neighbours are from determinSpawnBS" << endl;
+		// cerr << "These calls to get cell neighbours are from determinSpawnBS" << endl;
 		vector<pair<int, int>> currNeighCellNeigh = getCellNeighbours(currNeighCell);
 		vector<pair<int, int>> currNeighFreeNeigh = getFreeNeighbours(currNeighCellNeigh);
 		if (currNeighFreeNeigh.size() < 1) {

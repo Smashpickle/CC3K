@@ -59,7 +59,7 @@ void Controller::start() {
 		}
 	}
 	playerRace = race;
-	if (mapName != "defaultMap.txt") {
+	if (mapName != "MapDefault.txt") {
 		cerr << "No RNG Generation" << endl;
 		playground->spawnManual(mapName, player, floorNumber);
 	} else {
@@ -218,7 +218,7 @@ void Controller::goDown() {
 		playground = new Floor;
 		cout << "generating new map" << endl;
 		playground->init(mapName);
-		if (mapName != "defaultMap.txt") {
+		if (mapName != "MapDefault.txt") {
 			playground->spawnManual(mapName, player, floorNumber);
 		} else {
 			playground->setPlayer(player);
